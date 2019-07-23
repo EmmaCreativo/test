@@ -4,6 +4,34 @@
     font-display: block;
 }
 
+/*----------------Fonts---------------------*/
+@font-face{
+	font-family:"Pacifico Regular";
+	src: url(fonts/Pacifico.ttf) format("woff");
+	font-weight: 400;
+	}
+@font-face{
+	font-family:"Print Clearly";
+	src: url(fonts/PRINC___.TTF) format("woff");
+	font-weight: 500;
+	}
+@font-face{
+	font-family:"BPreplay";
+	src: url(fonts/BPreplayBoldItalics.otf) format("woff");
+	font-weight: 700;
+	}
+@font-face{
+	font-family:"BPreplay";
+	src: url(fonts/BPreplayBold.otf) format("woff");
+	font-weight: 800;
+	}
+
+@font-face{
+	font-family:"Lilly";
+	src: url(fonts/Lilly__.ttf) format("woff");
+	font-weight: 300;
+	}
+
 html { scroll-behavior: smooth; }
 
 input{
@@ -241,33 +269,7 @@ ul li label{
 
 /*------------Codigo Carrito--------------*/
 
-/*----------------Fonts---------------------*/
-@font-face{
-	font-family:"Pacifico Regular";
-	src: url(fonts/Pacifico.ttf) format("woff");
-	font-weight: 400;
-	}
-@font-face{
-	font-family:"Print Clearly";
-	src: url(fonts/PRINC___.TTF) format("woff");
-	font-weight: 500;
-	}
-@font-face{
-	font-family:"BPreplay";
-	src: url(fonts/BPreplayBoldItalics.otf) format("woff");
-	font-weight: 700;
-	}
-@font-face{
-	font-family:"BPreplay";
-	src: url(fonts/BPreplayBold.otf) format("woff");
-	font-weight: 800;
-	}
 
-@font-face{
-	font-family:"Lilly";
-	src: url(fonts/Lilly__.ttf) format("woff");
-	font-weight: 300;
-	}
 
 /*----------------Container---------------------*/
 #container{
