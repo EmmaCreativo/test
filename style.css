@@ -412,15 +412,15 @@ ul li label{
 	display: none;
 }
 
-#contact:checked ~ #contenedor{
+#contacts:checked ~ #contenedor{
 	height: 200vh;
 }
-#contact:checked ~ #contenedor #wrapper{
+#contacts:checked ~ #contenedor #wrapper{
 	z-index: 1;
 	position: relative;
 	height: 200vh;
 }
-#contact:checked ~ #contenedor a #flecha{
+#contacts:checked ~ #contenedor a #flecha{
 	display: block;
 }
 
