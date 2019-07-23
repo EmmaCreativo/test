@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/cupcake_1.png">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Pacifico|Ultra&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<input type="checkbox" id="chek">
+	<input type="checkbox" id="chek2">
+	<input type="checkbox" id="chek3">
+	<input type="checkbox" id="chek4">
+	<input type="checkbox" name="list" id="cupcakes">
+	<input type="checkbox" name="list" id="contact">
+	<header>
+		<div id="logohome"></div>
+		<label for="chek"><div id="carrito"></div></label>
+	</header>
+<!-- ************************ menu ******************************* -->
+	<div id="container">
+		
+		<h2>Cupcake</h2>
+		<h2>Qty</h2>
+		<div class="productos">
+			<div class="izquierda">
+				<!-- <h3>.Producto1</h3>
+				<h3>.Producto2</h3>
+				<h3>.Producto3</h3>
+				<h3>.Producto4</h3>
+				<h3>.Producto5</h3> -->
+			</div>
+
+			<div class="derecha">
+				<!-- <h3>x2</h3>
+				<h3>x2</h3>
+				<h3>x2</h3>
+				<h3>x2</h3>
+				<h3>x2</h3> -->
+			</div>
+			
+		</div>
+		<h2 class="total">$0.00</h2>
+		<h2 class="msj">Total price</h2>
+		<button><a href="https://www.paypal.com/cr/home" target="_blank">Check</a></button>
+
+	</div><!-- Termina container -->
+	<!-- ************************ home ******************************* -->
+	<div id="contenedor">
+		<section id="home">
+			<div id="con">
+				<ul id="circulo">
+					<li>
+						<label for="cupcakes">
+							<img src="images/cupcake_4.png" alt="Cupcakes"><p class="ani">Cupcakes</p>
+						</label>
+					</li>
+					<li>
+						<label for="community">
+							<img src="images/cupcake_1.png" alt="Community"><p class="ani">Community</p>
+						</label>
+					</li>
+					<li>
+						<label for="events">
+							<img src="images/cupcake_2.png" alt="Corp Events"><p class="ani">Corp Events</p>
+						</label>
+					</li>
+					<li>
+						<label for="deliveries">
+							<img src="images/cupcake_3.png" alt="Deliveries"><p class="ani">Deliveries</p>
+						</label>
+					</li>
+					<li>
+						<label for="contact">
+							<img src="images/cupcake_5.png" alt="Contact">
+							<p class="ani">Contact</p></label>
+					</li>
+					<li>
+						<label for="about">
+							<img src="images/cupcake_6.png" alt="About Us"><p class="ani">About Us</p>
+						</label>
+					</li>
+				</ul>
+			</div>
+			
+			
+		</section>
+
+		
+
+		<a href="#wrapper"><div id="flecha"></div></a>
+<!-- ************************ productos ******************************* -->
+		<a href="#productos"><div id="flecha2"></div></a>
+		<section id="productos">
+		
+			<h2 id="titulo">Cupcakes</h2>
+	<!-- producto 1 -->
+
+			<div class="cup">
+				<img src="images/cupcake_1.png" alt="cupcake Lemon">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Lemon" readonly>
+					<input type="text" name="precio" value="4" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 2 -->
+			<div class="cup">
+				<img src="images/cupcake_2.png" alt="cupcake Chocolate">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Chocolat" readonly>
+					<input type="text" name="precio" value="6" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 3 -->
+			<div class="cup">
+				<img src="images/cupcake_3.png" alt="cupcake Mix">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Mix" readonly>
+					<input type="text" name="precio" value="4.5" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 4 -->
+			<div class="cup">
+				<img src="images/cupcake_4.png" alt="cupcake Vainilla">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Vanilla" readonly>
+					<input type="text" name="precio" value="3.7" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 5 -->
+			<div class="cup">
+				<img src="images/cupcake_5.png" alt="cupcake Milk">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Milk" readonly>
+					<input type="text" name="precio" value="4.2" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 6 -->
+			<div class="cup">
+				<img src="images/cupcake_6.png" alt="cupcake Crema">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Cream" readonly>
+					<input type="text" name="precio" value="3.4" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 7 -->
+			<div class="cup">
+				<img src="images/cupcake_7.png" alt="cupcake Fresa">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Strawberry" readonly>
+					<input type="text" name="precio" value="4" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 8 -->
+			<div class="cup">
+				<img src="images/cupcake_8.png" alt="cupcake cereza">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Cherry" readonly>
+					<input type="text" name="precio" value="3.8" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 9 -->
+			<div class="cup">
+				<img src="images/cupcake_9.png" alt="cupcake Mora">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Blueberry" readonly>
+					<input type="text" name="precio" value="4.5" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 10 -->
+			<div class="cup">
+				<img src="images/cupcake_10.png" alt="cupcake Coffe">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Coffee" readonly>
+					<input type="text" name="precio" value="3.6" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 11 -->
+			<div class="cup">
+				<img src="images/cupcake_11.png" alt="cupcake Dark">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Dark" readonly>
+					<input type="text" name="precio" value="3.9" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 12 -->
+			<div class="cup">
+				<img src="images/cupcake_12.png" alt="cupcake Uva">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Grape" readonly>
+					<input type="text" name="precio" value="3.8" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 13 -->
+			<div class="cup">
+				<img src="images/cupcake_13.png" alt="cupcake Special">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Special" readonly>
+					<input type="text" name="precio" value="3" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 14 -->
+			<div class="cup">
+				<img src="images/cupcake_14.png" alt="cupcake Sweet">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Sweet" readonly>
+					<input type="text" name="precio" value="4.3" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 15 -->
+			<div class="cup">
+				<img src="images/cupcake_15.png" alt="cupcake Capuccino">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Capuccino" readonly>
+					<input type="text" name="precio" value="3.8" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 16 -->
+			<div class="cup">
+				<img src="images/cupcake_16.png" alt="cupcake Fresa">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Little" readonly>
+					<input type="text" name="precio" value="3.4" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 17 -->
+			<div class="cup">
+				<img src="images/cupcake_17.png" alt="cupcake Churchill">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Churchill" readonly>
+					<input type="text" name="precio" value="4" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 18 -->
+			<div class="cup">
+				<img src="images/cupcake_18.png" alt="cupcake Choco Fresa">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Choco Stars" readonly>
+					<input type="text" name="precio" value="3.6" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 19 -->
+			<div class="cup">
+				<img src="images/cupcake_19.png" alt="cupcake Almendras">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Almond" readonly>
+					<input type="text" name="precio" value="4.3" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+
+	<!-- producto 20 -->
+			<div class="cup">
+				<img src="images/cupcake_20.png" alt="cupcake Red velvet">
+				<form action="" id="formulario">
+					<input type="text" name="nombre" value="Red velvet" readonly>
+					<input type="text" name="precio" value="3.4" readonly >
+					<input type="number" value="1" name="cantidad">		
+					<input type="button" onclick="Carrito(this.form)" value="Add">	
+				</form>
+			</div>
+		<a href="#home"><div id="flecha3"><label for="chek4"></label></div></a>	
+		</section>
+
+<!-- ************************ contacto ******************************* -->
+		<div id="wrapper">
+	  		<section id="contact">
+	  			<h2>Contact</h2>
+	  			<div class ="cupcakes" id="insta"></div>
+	  			<div class ="cupcakes" id="face"></div>
+	  			<div class ="cupcakes" id="twitter"></div>
+	  			<h3> Questions or comments? </h3>
+	  		</section>	
+
+			<section id="inputs">
+				<input class="w3-input w3-border w3-round-large" type="text" name="correo" value="Email address" id="correo">
+				<textarea type="text" name="mssg" rows="20" cols="1" placeholder="Leave us your message:" id="mssg"></textarea> 
+				<input type="submit" name="send" value="Send" id="send">
+			</section>
+<!-- ************************ footer ******************************* -->
+			<footer>
+				<div class= "footers" id="izq">
+					<p>FAQs</p>
+					<p>Resources</p>
+					<p>Connect</p>
+				</div>					
+				<div class= "footers" id="cen">
+					<p>Delivery Policies</p>
+					<p>Subscriptions</p>
+				</div>
+				<div class= "footers"id="der">
+					<p>Community</p>
+					<p>Giving Back</p>
+					<p>Employment</p>
+				</div>
+			</footer>
+		
+		</div> <!-- Termina wrapper -->
+	</div><!-- Termina contenedor -->
+
+
+	
+
+	<script src="script.js"></script>
+</body>
+</html>

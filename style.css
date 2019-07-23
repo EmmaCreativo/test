@@ -1,0 +1,1009 @@
+@font-face {
+    font-family: Pacifico Regular;
+    src: url(fonts/Pacifico.ttf) format('ttf');
+    font-display: block;
+}
+
+html { scroll-behavior: smooth; }
+
+input{
+	position: absolute;
+	z-index: 100;
+}
+
+label{
+	cursor: pointer;
+}
+
+[type=checkbox],[type=radio]{
+	display: none;
+}
+
+[type=button],[type=submit]{
+	border: none;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+
+}
+/*-------------Transiciones---------------*/
+#chek:checked ~ #container{
+	display: block;
+	animation: dis .3s forwards;
+}
+
+#chek:checked ~ #contenedor #carrito{
+	background: url(images/cerrar.svg) no-repeat center;
+	background-size: contain;
+	transform: scale(0.7);
+}
+
+#chek:checked ~ #contenedor{
+	display: none;
+}
+
+@keyframes dis{
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+
+/*----------Contenedor del Home--------------*/
+#contenedor{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	overflow:hidden;
+	background: #F1FFCE url(images/bg.svg);
+	background-size: 50px;
+}
+/*----------Header de la Pagina--------------*/
+header{
+	width: 100%;
+	height: 10vh;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	padding: 5%;
+	top: 0;
+	z-index: 5;
+}
+/*----------Logo--------------*/
+#logohome{
+	width: 110px;
+	height: 45px;
+	background: url(images/logo.svg) no-repeat center;
+	background-size: cover;
+}
+/*----------Carrito SVG--------------*/
+#carrito{
+	width: 40px;
+	height: 51px;
+	background: url(images/carrito.svg);
+}
+/*----------Caja del Home--------------*/
+#home{
+	width: 100%;
+	height: 200vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+}
+/*----------Contenedores de las imagenes del Home--------------*/
+#con{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+    margin-top: 0px;
+    overflow-x: scroll;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    
+}
+
+/*--------------------Circulo cupcakes-------------------------*/
+
+ul{
+	width: auto;
+	height: 60vh;
+	position: absolute;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	left: 0%;
+	margin:0 50px;
+}
+ul li{
+    width: 200px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 30px;
+}
+#con > ul li:nth-child(1){
+
+	transform: translate(0px 0px);
+}
+#con > ul li:nth-child(2){
+	transform: translate(0px 0px);
+}
+#con > ul li:nth-child(3){
+	transform: translate(0px 0px);
+}
+#con > ul li:nth-child(4){
+	transform: translate(0px 0px);
+}
+#con > ul li:nth-child(5){
+	transform: translate(0px 0px);
+}
+#con > ul li:nth-child(6){
+	transform: translate(0px 0px);
+}
+
+
+
+ul li label{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+
+#con img{
+	position: relative;
+	width:100%;
+	animation: flota 5s infinite linear;
+}
+
+#con > ul li:nth-child(1) img{
+	animation-delay: 0.1s;
+}
+
+#con > ul li:nth-child(2) img{
+}
+
+#con > ul li:nth-child(3) img{
+	animation-delay: 0.3s;
+}
+
+#con > ul li:nth-child(4) img{
+	animation-delay: 0.5s;
+}
+
+#con > ul li:nth-child(5) img{
+}
+
+#con > ul li:nth-child(6) img{
+	animation-delay: 0.8s;
+}
+/*----------Textos del Home--------------*/
+.ani{
+	position: relative;
+	z-index: 2;
+	font-family: Pacifico;
+	width: 100px;
+	font-size: 1.5em;
+	text-align: center;
+	animation: flota 5s infinite linear;
+
+}
+
+#home > div:nth-child(1) p{
+	animation-delay: 0.1s;
+}
+
+#home > div:nth-child(2) p{
+	color: #fff;
+
+}
+
+#home > div:nth-child(3) p{
+	animation-delay: 0.3s;
+}
+
+#home > div:nth-child(4) p{
+	animation-delay: 0.5s;
+}
+
+#home > div:nth-child(5) p{
+
+}
+
+#home > div:nth-child(6) p{
+	animation-delay: 0.8s;
+}
+
+
+/*------------Codigo Carrito--------------*/
+
+/*----------------Fonts---------------------*/
+@font-face{
+	font-family:"Pacifico Regular";
+	src: url(fonts/Pacifico.ttf) format("woff");
+	font-weight: 400;
+	}
+@font-face{
+	font-family:"Print Clearly";
+	src: url(fonts/PRINC___.TTF) format("woff");
+	font-weight: 500;
+	}
+@font-face{
+	font-family:"BPreplay";
+	src: url(fonts/BPreplayBoldItalics.otf) format("woff");
+	font-weight: 700;
+	}
+@font-face{
+	font-family:"BPreplay";
+	src: url(fonts/BPreplayBold.otf) format("woff");
+	font-weight: 800;
+	}
+
+@font-face{
+	font-family:"Lilly";
+	src: url(fonts/Lilly__.ttf) format("woff");
+	font-weight: 300;
+	}
+
+/*----------------Container---------------------*/
+#container{
+	width:100vw;
+	height: 100vh;
+	background: #F1FFCE url(images/bg.svg);
+	background-size: 50px;
+	overflow: hidden;
+	position: absolute;
+	display: none;
+	z-index: 3;
+	padding-top: 10vh;
+}
+
+/*----------------nav---------------------*/
+#container nav{
+	display: flex;
+	width: 100vw;
+	height:10%;
+	align-items: center;
+}
+#logo{
+	width: 30%;
+	height: 65%;
+	position: relative;
+	top:8%;
+	left:5%;
+}
+#cerrar{
+	width: 10%;
+	height: 45%;
+	position: relative;
+	top:8%;
+	left:55%;
+	cursor: pointer;
+}
+
+/*----------------nav---------------------*/
+
+ #container h2:nth-of-type(1){
+	font-family:"Lilly";
+	font-weight: 300;
+	color: #ff397b;
+	float: left;
+	position: relative;
+	left: 5%;
+	top: 3%;
+
+}
+
+ #container h2:nth-of-type(2){
+	font-family:"Lilly";
+	font-weight: 300;
+	color: #ff397b;
+	position: relative;
+	left: 50%;
+	top: 3%;
+
+}
+/*----------------Productos---------------------*/
+.productos{
+	width: 100%;
+	height: 45%;
+	position: relative;
+	top:3%;
+	display: flex;
+	align-content: space-around;
+	color:#332756;
+	padding: 10px 10px 0;
+	overflow-y: scroll;
+}
+
+.productos .izquierda > h3, .productos .derecha > h3{
+	font-family:"Print Clearly";
+	font-weight: 500;
+}
+/*----------------Titulos Productos---------------------*/
+.productos .izquierda > h3{
+	position: relative;
+	left:6vw;
+	font-size: 1.5em;
+	margin-top: 40%;
+
+}
+/*----------------Cantidad Productos---------------------*/
+.productos .derecha > h3{
+	position: relative;
+	left: 63vw;
+	font-size: 1.5em;
+	margin-top: 5vh;
+}
+
+
+  #container h2:nth-of-type(3){
+	font-family:"BPreplay";
+	font-weight: 800;
+	color: #332756;
+	font-size: 3.7em;
+	position: relative;
+	top: 11%;
+	left:26%;
+}
+
+  #container h2:nth-of-type(4){
+	font-family:"Print Clearly";
+	font-weight: 500;
+	position: relative;
+	font-size: 1.7em;
+	top: 12%;
+	left:33%;
+	color:#332756;
+}
+
+/*----------------boton---------------------*/
+ #container button{
+	width: 40vw;
+	height: 13vw;
+	position: relative;
+	background: #ff397b;
+	border: none;
+	top: 13vh;
+	left:32%;
+	color: #fff;
+	border-radius: 10px;
+	font-family:"BPreplay";
+	font-weight: 700;
+	font-size: 1.4em;
+	cursor: pointer;
+}
+
+
+/*-----------------------------Flecha de Contact------------------------*/
+
+#flecha{
+	width: 70px;
+	height: 100px;
+	background: url(images/flecha.svg) no-repeat center;
+	position: relative;
+	top: -60%;
+	display: none;
+}
+
+#contact:checked ~ #contenedor{
+	height: 200vh;
+}
+#contact:checked ~ #contenedor #wrapper{
+	z-index: 1;
+	position: relative;
+	height: 200vh;
+}
+#contact:checked ~ #contenedor a #flecha{
+	display: block;
+}
+
+/*------------------checked de productos--------------*/
+#flecha2{
+	width: 70px;
+	height: 100px;
+	background: url(images/flecha.svg) no-repeat center;
+	position: relative;
+	top: -65%;
+	display: none;
+}
+
+#cupcakes:checked ~ #contenedor{
+	height: 1100vh;
+}
+#cupcakes:checked ~ #contenedor #productos{
+	height: auto;
+	z-index: 1;
+	position: relative;
+}
+#cupcakes:checked ~ #contenedor a #flecha2{
+	display: block;
+}
+
+/*-------------------devolverse----------------------------------*/
+
+#flecha3{
+	width: 35px;
+	height: 50px;
+	background: url(images/flecha2.svg) no-repeat center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 3;
+	display: fixed;
+	transform: rotate(180deg);
+}
+
+#chek3:checked ~ #contenedor{
+	height: 1100vh;
+}
+#chek3:checked ~ #contenedor #productos{
+	height: auto;
+	z-index: 1;
+	position: relative;
+}
+
+/*--------------------Código sesión Productos------------------------*/
+
+#titulo{
+	font-family:"BPreplay";
+	font-weight: 700;
+	color:#ff397b;
+	font-size: 3em;
+	text-align: center;
+
+}
+#productos{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;
+}
+
+#productos .cup{
+	width: 100%;
+	height: 5%;
+	position: relative;
+	top: 2%;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+}
+
+.cup:nth-child(1){
+	position: relative;
+	top: 2%;
+}
+
+/*
+----------------------------------
+Producto1
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(2) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	top: 15%;
+	animation: flota 5s infinite linear;
+}
+/*--------form------------*/
+form{
+	position: relative;
+	width: 50%;
+	height: 70%;
+	display: flex-reverse;
+	justify-content: space-around;
+	flex-direction: column;
+	left: 5%;
+}
+/*--------nombre------------*/
+form input:nth-of-type(1){
+	font-family:"Lilly";
+	font-weight: 300;
+	color: #332756;
+	font-size: 1.5em;
+	background: none;
+	border: none;
+	position: relative;
+	margin-top: 2vh;
+}
+
+/*--------precio------------*/
+form input:nth-of-type(2){
+	font-family:"Lilly";
+	font-weight: 300;
+	color: #332756;
+	font-size: 3.5em;
+	background: none;
+	border: none;
+	position: relative;
+	margin-top: -1vh;
+}
+/*--------Qty------------*/
+form > input:nth-of-type(3){
+	width: 50%;
+	height: 12%;
+	background: #fff;
+	left: 5vh;
+	text-align: center;
+	font-family:"Lilly";
+	font-weight: 300;
+	font-size: 1em;
+	border-radius: 20px;
+	border:1px solid #ff397b;
+	position: relative;
+	margin-top: -2vh;
+}
+
+/*--------submit------------*/
+form > input:nth-of-type(4){
+	width: 50%;
+	height: 15%;
+	background: #ff397b;
+	margin-top: 8vh;
+	left: 5vh;
+	border-radius: 20px;
+	font-family:"BPreplay";
+	font-weight: 700;
+	color:#fff;
+	font-size: 1.5em;
+	position: relative;
+	margin-top: 2vh;
+}
+
+/*
+----------------------------------
+Producto2
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(3) > img{
+	position: relative;
+	height: 80%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto3
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(4) > img{
+	position: relative;
+	height: 70%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+
+/*
+----------------------------------
+Producto4
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(5) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto5
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(6) > img{
+	position: relative;
+	height: 50%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto6
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(7) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto7
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(8) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+
+/*
+----------------------------------
+Producto8
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(9) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+
+/*
+----------------------------------
+Producto9
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(10) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+
+/*
+----------------------------------
+Producto10
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(11) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto11
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(12) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto12
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(13) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto13
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(14) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto14
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(15) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto15
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(16) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto16
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(17) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+
+/*
+----------------------------------
+Producto17
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(18) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+
+/*
+----------------------------------
+Producto18
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(19) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto19
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(20) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+
+/*
+----------------------------------
+Producto20
+----------------------------------
+*/
+/*--------imagen------------*/
+.cup:nth-child(21) > img{
+	position: relative;
+	height: 60%;
+	left: 5%;
+	animation: flota 5s infinite linear;
+}
+/*--------------------Código Contacto------------------------*/
+#wrapper{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;
+}
+
+#wrapper #contact{
+	width: 100%;
+	height: 35%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+
+#contact h2{
+	font-family: 'Lilly';
+	color: #Ff397b;
+	font-size: 2em;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	left: 0;
+}
+
+.cupcakes{
+	width: 20%;
+	height: 40%;
+}
+
+#insta{
+	background: url(svg/instacup.svg) no-repeat center;
+	background-size: contain;
+}
+
+#face{
+	background: url(svg/facecup.svg) no-repeat center;
+	background-size: contain;
+}
+
+#twitter{
+	background: url(svg/twitter.svg) no-repeat center;
+	background-size: contain;
+}
+
+#contact h3{
+	font-family: 'Lilly';
+	color: #ff397b;
+	font-size: 1em;
+	width: 100%;
+	position: relative;
+	left: 4%;
+}
+
+#inputs{
+	width: 100%;
+	height: 45%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#wrapper #inputs #correo{
+	width: 93%;
+	height:12%;
+	font-family: 'Print Clearly';
+	font-size: 1em;
+	background: rgba(175,172,245,.44);
+	padding-left: 5px;
+	border-color: transparent;
+	margin-top:4%;
+	outline: none;
+	color:#332756;
+
+}
+
+
+#wrapper #inputs #mssg{
+	width: 93%;
+	height:75%;
+	font-family: 'Print Clearly';
+	font-size: 1em;
+	border-radius: 5%;
+	background: rgba(255,95,135,.35);
+	padding-top: 10px;
+	padding-left: 5px;
+	border-color: transparent;
+	position: relative;
+	top: 20%;
+	outline: none;
+}
+
+#wrapper #inputs #mssg::placeholder{
+
+	color:#332756;
+}
+
+#wrapper #inputs #send{
+	width: 15%;
+	height:10%;
+	font-family: 'Lilly';
+	color: #332756;
+	font-size: 90%;
+	border-radius: 25%;
+	border-color: transparent;
+	background: rgba(175,172,245,1);
+	position: absolute;
+	right: 6%;
+	bottom: 8%;
+	justify-content: center;
+	text-align: center;
+	outline: none;
+
+}
+
+#wrapper footer{
+	background: url(svg/torontocity.svg) #AFACF5 no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	width: 100%;
+	height:20%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+.footers{
+	width: 25%;
+	height: auto;
+	font-family: 'Print Clearly';
+	font-size: 65%;
+	color:#24243D;
+	justify-content: center;
+	
+}
+
+.footers p{
+	margin:1em;
+}
+
+#cen {
+	margin-top: 7%;
+}
+
+/*------------------Animaciones---------------------*/
+@keyframes flota{
+	0%{
+
+	}
+	25%{
+		transform: translate(5%,-5%);
+	}
+	50%{
+		transform: translate(-5%,0%);
+	}
+	75%{
+		transform: translate(5%,-5%);
+	}
+	100%{
+		transform: translate(0,0);
+	}
+}
+
+
+
+
+
+
+
